@@ -7,15 +7,15 @@ function LoginForm(){
     const [pwd, setPwd] = useState("");
     const navigate = useNavigate();
 
-    const usrTyped = (event) => {
+    const usrTyped = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUsr(event.target.value);
     }
 
-    const pwdTyped = (event) => {
+    const pwdTyped = (event: React.ChangeEvent<HTMLInputElement>) => {
         setPwd(event.target.value);
     }
 
-    const loginNow = (id, pwd) => {
+    const loginNow = (id: string, pwd: string) => {
         if (id === pwd){
             // alert("Passed");
             navigate("/active");
