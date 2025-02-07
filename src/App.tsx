@@ -7,7 +7,7 @@ function App(){
   <Router>
     <Routes>
       <Route path="/" element={<LoginScreen />} />
-      <Route path="/active" element={<Active />} />
+      <Route path="/active*" element={<Active />} />
     </Routes>
 </Router></div>);
 }

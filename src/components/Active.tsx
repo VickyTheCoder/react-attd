@@ -9,7 +9,7 @@ function Active(){
         <div>
           <h2>Toggle Control</h2>
       <button onClick={OnOff}>
-        {isSelected ? "Out ❌" : "In ✅"}
+        {isSelected ? "In ✅" : "Out ❌"}
       </button>
       <p>Option is {isSelected ? "Selected" : "Deselected "}</p>
           <a href="/">Go Back</a>
