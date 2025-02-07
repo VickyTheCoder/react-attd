@@ -7,12 +7,12 @@ function LoginForm(){
     const [pwd, setPwd] = useState("");
     const navigate = useNavigate();
 
-    const usrTyped = (evt) => {
-        setUsr(evt.target.value);
+    const usrTyped = (event) => {
+        setUsr(event.target.value);
     }
 
-    const pwdTyped = (evt) => {
-        setPwd(evt.target.value);
+    const pwdTyped = (event) => {
+        setPwd(event.target.value);
     }
 
     const loginNow = (id, pwd) => {
